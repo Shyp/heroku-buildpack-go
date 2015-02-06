@@ -161,6 +161,7 @@ echo 'PATH=$PATH:$HOME/bin' > $build/.profile.d/go.sh
 # Add to end of bin/compile in heroku go buildpack
 if test -e $build/Godeps; then
     echo "-----> Checking for build artifacts from godep sandbox"
+    echo `godep path` | tr ":" "\n"
     for dep in $(echo `godep path` | tr ":" "\n"); do
         echo $dep
         if test -d $dep/bin; then
