@@ -1,6 +1,8 @@
 # Heroku Buildpack: Go
 
-This is a [Heroku buildpack][buildpack] for [Go][go].
+This is a [Heroku buildpack][buildpack] for [Go][go]. Shyp's version is like
+Heroku's but installs binaries from third party libs, using the patch here:
+https://gist.github.com/shaunduncan/6904322
 
 ## Getting Started
 
